@@ -5,16 +5,21 @@ import React, { useEffect, useMemo, useState } from 'react'
 import Image from 'next/image';
 
 interface Props {
-    customCardArray: any[] | undefined;
+    customCardArray: CardData[] | undefined;
     isMobile: boolean;
 }
 
-export const customReactResponsiveCarousel: React.FC<Props> = ({ customCardArray, isMobile }) => {
+interface CardData {
+    name: string;
+    image: string;
+    content: React.JSX.Element;
+}
+
+export const CustomReactResponsiveCarousel: React.FC<Props> = ({ customCardArray, isMobile }) => {
 
 
-    const [items, setItems] = useState<any>();
+    const [items, setItems] = useState<React.JSX.Element[] | undefined>();
 
-    // Memoize the children elements based on the customCardArray
     const childMemo = useMemo(() => {
         return customCardArray?.map((data, index) => (
             <div key={index}>
@@ -51,4 +56,4 @@ export const customReactResponsiveCarousel: React.FC<Props> = ({ customCardArray
     )
 }
 
-export default customReactResponsiveCarousel
+export default CustomReactResponsiveCarousel

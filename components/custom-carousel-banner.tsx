@@ -8,7 +8,7 @@ import Image from "next/image"
 import Autoplay from "embla-carousel-autoplay"
 
 interface Props {
-    customCardArray: any[] | undefined;
+    customCardArray: { image: string; }[] | undefined;
 }
 
 export const CustomCarouselBanner: React.FC<Props> = ({ customCardArray }) => {

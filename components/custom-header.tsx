@@ -5,7 +5,7 @@ import useMediaQuery from "./mq.hook";
 import BurgerMenu from './BurgerMenu';
 import styles from './custom-header.module.css';
 
-function customHeader() {
+function CustomHeader() {
   const isMobile = useMediaQuery("(max-width: 768px)");
 
   const [navClass, setnavClass] = useState("");
@@ -15,7 +15,7 @@ function customHeader() {
   });
 
   function scrollNavigation() {
-    var scrollup = document.documentElement.scrollTop;
+    const scrollup = document.documentElement.scrollTop;
     if (scrollup > 0) {
       setnavClass("nav-sticky");
     } else {
@@ -171,4 +171,4 @@ function customHeader() {
   )
 }
 
-export default customHeader
+export default CustomHeader

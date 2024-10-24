@@ -6,15 +6,15 @@ import {
     Carousel,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
-import Image from "next/image"
-import { useMediaQuery } from 'react-responsive'
 
 interface Props {
-    customCardArray: any[] | undefined;
+    customCardArray: CardData[] | undefined;
+}
+
+interface CardData {
+    content: string;
 }
 
 export const CustomCarousel: React.FC<Props> = ({ customCardArray }) => {
@@ -31,12 +31,11 @@ export const CustomCarousel: React.FC<Props> = ({ customCardArray }) => {
                     align: "start",
                     loop: true,
                 }}
-                //plugins={[plugin.current]}
                 onMouseEnter={plugin.current.stop}
                 onMouseLeave={plugin.current.reset}
             >
                 <CarouselContent>
-                    {customCardArray?.map((data: any, index: any) => (
+                    {customCardArray?.map((data: CardData, index: React.Key) => (
                         <CarouselItem key={index}>
                             <Card className="p-0">
                                 <CardContent className="h-full w-full p-0">

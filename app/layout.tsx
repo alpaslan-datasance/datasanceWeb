@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import Script from 'next/script'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -12,11 +11,6 @@ const geistSans = localFont({
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
-  weight: "100 900",
-});
-const gentonaBold = localFont({
-  src: "./fonts/Gentona-Bold.woff",
-  variable: "--font-gentona-bold",
   weight: "100 900",
 });
 
@@ -32,7 +26,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <Script src="https://code.jquery.com/jquery-3.4.1.min.js" /> */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

@@ -1,21 +1,28 @@
 
 "use client"
-import React from 'react'
+import React, { memo, useEffect, useState } from 'react'
 import { Button } from "@/components/ui/button"
 import useMediaQuery from "../components/mq.hook";
 import dynamic from 'next/dynamic'
 
-export const SliderOne = React.memo(
-    () => {
-        const [customCardState, setcustomCardState] = React.useState<any[]>()
-        const [customCardMobile, setcustomCardMobileState] = React.useState<any[]>()
+export const SliderOne = memo( function SliderOne () {
+        const [customCardState, setcustomCardState] = useState<{
+            name: string;
+            image: string;
+            content: React.JSX.Element;
+        }[]>()
+        const [customCardMobile, setcustomCardMobileState] = useState<{
+            name: string;
+            image: string;
+            content: React.JSX.Element;
+        }[]>()
         const isMobile = useMediaQuery("(max-width: 768px)");
 
         const DynamicHeader = dynamic(() => import('@/components/custom-react-responsive-carousel'), {
             loading: () => <p>Loading...</p>,
           })
 
-        React.useEffect(() => {
+        useEffect(() => {
             const cards = [
                 {
                     name: "First item",
@@ -159,13 +166,11 @@ export const SliderOne = React.memo(
 
         return (
             <>
-                {/* <CustomCarousel customCardArray={isDesktopOrLaptop ? customCardState : customCardMobile} ></CustomCarousel> */}
                 <div key={`section-${"slider-one"}`} id={"slider-one"}>
                     <DynamicHeader customCardArray={!isMobile ? customCardState : customCardMobile} isMobile={isMobile} />
                 </div>
             </>
         )
     },
-    // this
     () => true
 );

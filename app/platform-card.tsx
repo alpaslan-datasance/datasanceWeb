@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/accordion"
 import Image from 'next/image'
 
-function platformCard() {
+function PlatformCard() {
     return (
         <div className='w-full md:w-auto bg-white flex justify-center items-center mt-3 mb-4' key={`section-${"product"}`} id={"product"}>
             <div className='container'>
@@ -213,7 +213,7 @@ function platformCard() {
                                 <AccordionContent className='border-2 rounded'>
                                     <div className='grid xl:text-grid-cols-2 2xl:grid-cols-2 mx-10 mt-3'>
                                         <div>
-                                            <div className='text-black font-bold mt-5 text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:5xl'>Don't worry when managing thousands of Edge devices</div>
+                                            <div className='text-black font-bold mt-5 text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:5xl'>{`Don't worry when managing thousands of Edge devices`}</div>
                                             <div className='mt-9 text-black sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:4xl'>When it comes to Edge, you need to manage thousands of heterogeneous HW resource. With Pot, you can manage thousands of Edge devices, and microservices from a single management UI</div>
                                             <div className='mt-2'>
                                                 <ul className="list-disc">
@@ -251,4 +251,4 @@ function platformCard() {
     )
 }
 
-export default platformCard
+export default PlatformCard

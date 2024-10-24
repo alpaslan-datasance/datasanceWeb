@@ -1,12 +1,11 @@
 
 "use client"
-import React from 'react'
-import { Button } from "@/components/ui/button"
+import React, { useState } from 'react'
 import { CustomCarouselBanner } from '@/components/custom-carousel-banner'
 
-function sliderBanner() {
+function SliderBanner() {
 
-    const [customCardState, setcustomCardState] = React.useState<any[]>()
+    const [customCardState, setcustomCardState] = useState<{ image: string; }[]>()
 
     React.useEffect(() => {
         const bannerCards = [
@@ -40,4 +39,4 @@ function sliderBanner() {
     )
 }
 
-export default sliderBanner
+export default SliderBanner

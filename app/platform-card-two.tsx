@@ -18,7 +18,7 @@ import {
 import { Button } from '@/components/ui/button'
 
 
-function platformCardTwo() {
+function PlatformCardTwo() {
 
     const [selectedTabValue, setselectedTabValue] = useState("smart-city")
 
@@ -55,7 +55,7 @@ function platformCardTwo() {
                         ></Image>
                     </div>
                     <div className='sm:col-span-12 md:col-span-12 lg:col-span-12 xl:col-span-6 2xl:col-span-6'>
-                        <Tabs defaultValue="smart-city" className="w-full" onValueChange={(e: any) => setselectedTabValue(e)}>
+                        <Tabs defaultValue="smart-city" className="w-full" onValueChange={e => setselectedTabValue(e)}>
                             <TabsList className="grid w-full grid-cols-4">
                                 <TabsTrigger value="smart-city" className='text-black font-bold text-xs sm:text-xs md:text-xs lg:text-xs xl:text-lg 2xl:text-lg'>Smart City</TabsTrigger>
                                 <TabsTrigger value="5g-base-stations" className='text-black font-bold text-xs sm:text-xs md:text-xs lg:text-xs xl:text-lg 2xl:text-lg'>5G Stations</TabsTrigger>
@@ -146,4 +146,4 @@ function platformCardTwo() {
     )
 }
 
-export default platformCardTwo
+export default PlatformCardTwo
