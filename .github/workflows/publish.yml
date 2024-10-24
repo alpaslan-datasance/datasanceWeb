@@ -2,7 +2,7 @@ name: publish-to-datasance.com
 on:
   push:
     branches:
-      - deployment
+      - main
 
 permissions:
   contents: read
