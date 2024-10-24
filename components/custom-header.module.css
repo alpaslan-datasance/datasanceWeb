@@ -1,0 +1,23 @@
+.menuItem {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* Animation effect */
+.menuItem:hover {
+    background-color: #000000;
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+}
+
+/* Optional - For a subtle shadow effect */
+.menuItem:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
