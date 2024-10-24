@@ -4,7 +4,6 @@ const nextConfig = {
     loader: "custom",
     path:'./ImageLoader.js'
   },
-  assetPrefix: "./",
 };
 
 export default nextConfig;
