@@ -2,8 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['alpaslan-datasance.github.io/datasanceWeb'],
+    unoptimized: true,
   },
+  assetPrefix: '/datasanceWeb',
+  basePath: '/datasanceWeb',
+  output: 'export'
 };
 
 export default nextConfig;
