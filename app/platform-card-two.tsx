@@ -25,15 +25,15 @@ function PlatformCardTwo() {
     function chooseImage() {
         switch (selectedTabValue) {
             case "smart-city":
-                return (`/images/smartcity_3.webp`)
+                return (`./images/smartcity_3.webp`)
             case "5g-base-stations":
-                return (`/images/5g.webp`)
+                return (`./images/5g.webp`)
             case "manufacturing":
-                return (`/images/manufacturing.webp`)
+                return (`./images/manufacturing.webp`)
             case "logistics":
-                return (`/images/distirbutioncc.webp`)
+                return (`./images/distirbutioncc.webp`)
         }
-        return "/images/smartcity_3.webp"
+        return "./images/smartcity_3.webp"
     }
 
     return (

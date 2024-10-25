@@ -31,7 +31,7 @@ function CustomHeader() {
             <div className='ms-0 flex'>
               <div className='flex justify-start items-center'>
                 <Image
-                  src="/images/datasance-logo-white.webp"
+                  src="./images/datasance-logo-white.webp"
                   width={50}
                   height={50}
                   alt="Picture of the author"
@@ -44,7 +44,7 @@ function CustomHeader() {
               <div className='grid grid-cols-4 gap-4'>
                 <div>
                   <Image
-                    src="/images/linkedin-white.svg"
+                    src="./images/linkedin-white.svg"
                     width={20}
                     height={20}
                     alt="Picture of the author"
@@ -53,7 +53,7 @@ function CustomHeader() {
                 </div>
                 <div>
                   <Image
-                    src="/images/instagram-white.svg"
+                    src="./images/instagram-white.svg"
                     width={20}
                     height={20}
                     alt="Picture of the author"
@@ -62,7 +62,7 @@ function CustomHeader() {
                 </div>
                 <div>
                   <Image
-                    src="/images/twitterx-white.svg"
+                    src="./images/twitterx-white.svg"
                     width={20}
                     height={20}
                     alt="Picture of the author"
@@ -72,7 +72,7 @@ function CustomHeader() {
                 </div>
                 <div>
                   <Image
-                    src="/images/menu-480.svg"
+                    src="./images/menu-480.svg"
                     width={20}
                     height={20}
                     alt="Picture of the author"
@@ -91,7 +91,7 @@ function CustomHeader() {
           <div className='ms-5 flex grid-cols-subgrid col-span-1'>
             <div className='flex justify-start items-center '>
               <Image
-                src="/images/datasance-logo-black.webp"
+                src="./images/datasance-logo-black.webp"
                 width={50}
                 height={50}
                 alt="Picture of the author"
@@ -121,7 +121,7 @@ function CustomHeader() {
                 !isMobile ?
                   <div className={`grid grid-cols-3 gap-3`}>
                     <Image
-                      src="/images/linkedin-black.svg"
+                      src="./images/linkedin-black.svg"
                       width={1}
                       height={1}
                       sizes="100vw"
@@ -134,7 +134,7 @@ function CustomHeader() {
                     />
 
                     <Image
-                      src="/images/instagram-black.svg"
+                      src="./images/instagram-black.svg"
                       width={1}
                       height={1}
                       sizes="100vw"
@@ -147,7 +147,7 @@ function CustomHeader() {
                     />
 
                     <Image
-                      src="/images/twitterx-black.svg"
+                      src="./images/twitterx-black.svg"
                       width={1}
                       height={1}
                       sizes="100vw"

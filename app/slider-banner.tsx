@@ -10,22 +10,22 @@ function SliderBanner() {
     React.useEffect(() => {
         const bannerCards = [
             {
-                image: "/images/banner/vpl.webp"
+                image: "./images/banner/vpl.webp"
             },
             {
-                image: "/images/banner/iso.webp"
+                image: "./images/banner/iso.webp"
             },
             {
-                image: "/images/banner/ticc.webp"
+                image: "./images/banner/ticc.webp"
             },
             {
-                image: "/images/banner/nvidia.webp"
+                image: "./images/banner/nvidia.webp"
             },
             {
-                image: "/images/banner/Microsoft.webp"
+                image: "./images/banner/Microsoft.webp"
             },
             {
-                image: "/images/banner/cekirdek.webp"
+                image: "./images/banner/cekirdek.webp"
             },
         ];
         setcustomCardState(bannerCards)
