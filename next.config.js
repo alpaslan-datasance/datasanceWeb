@@ -5,9 +5,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  assetPrefix: isProd ? '/datasanceWeb' : "",
+  assetPrefix: isProd ? '/datasanceWeb/' : "",
   basePath: isProd ? '/datasanceWeb' : "",
   output: 'export',
+  poweredByHeader: false,
+  trailingSlash: true,
 };
 
 export default nextConfig;
