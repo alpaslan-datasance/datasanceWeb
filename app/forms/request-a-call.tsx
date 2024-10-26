@@ -2,25 +2,36 @@
 import Image from 'next/image'
 import React, { useEffect } from 'react'
 
+interface WindowWithHbspt extends Window {
+  hbspt?: {
+    forms: {
+      create: (options: { portalId: string; formId: string; target: string }) => void;
+    };
+  };
+}
+
 function DatasanceFormRequestACall() {
 
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.src='https://js.hsforms.net/forms/v2.js';
-        document.body.appendChild(script);
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://js.hsforms.net/forms/v2.js';
+    document.body.appendChild(script);
 
-        script.addEventListener('load', () => {
-            // @TS-ignore
-            if ((window as any).hbspt) {
-                // @TS-ignore
-                (window as any).hbspt.forms.create({
-                    portalId: '143920332',
-                    formId: 'cad86b57-fab2-4977-9cb0-20af44024a50',
-                    target: '#hubspotForm'
-                })
-            }
+    script.addEventListener('load', () => {
+      const windowWithHbspt = window as WindowWithHbspt;
+      if (windowWithHbspt.hbspt) {
+        windowWithHbspt.hbspt.forms.create({
+          portalId: '143920332',
+          formId: 'cad86b57-fab2-4977-9cb0-20af44024a50',
+          target: '#hubspotForm',
         });
-    }, []);
+      }
+    });
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <>
@@ -52,7 +63,7 @@ function DatasanceFormRequestACall() {
             </div>
             <div className="w-full md:w-8/12 p-0">
               <div className="bg-white h-screen flex items-center justify-center">
-              <div id="hubspotForm" className='overflow-auto w-11/12 h-11/12'></div>
+                <div id="hubspotForm" className='overflow-auto w-11/12 h-11/12'></div>
               </div>
             </div>
           </div>

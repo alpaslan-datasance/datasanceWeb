@@ -1,5 +1,3 @@
-import CustomFooter from '@/components/custom-footer'
-import CustomHeader from '@/components/custom-header'
 import React from 'react'
 import DatasanceFormRequestACall from './request-a-call'
 
