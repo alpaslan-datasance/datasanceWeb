@@ -35,7 +35,7 @@ const ScrollToTopButton = () => {
             aria-label="Scroll to top"
         >
             <Image
-                src="./images/up-button.webp"
+                src="/images/up-button.webp"
                 style={{ width: !isMobile ? '1.5rem' : '0.8rem' }}
                 loading='eager'
                 width={1}

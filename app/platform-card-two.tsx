@@ -16,24 +16,25 @@ import {
     TabsTrigger,
 } from "@/components/ui/tabs"
 import { Button } from '@/components/ui/button'
+import { useRouter } from 'next/navigation';
 
 
 function PlatformCardTwo() {
-
+    const { push } = useRouter();
     const [selectedTabValue, setselectedTabValue] = useState("smart-city")
 
     function chooseImage() {
         switch (selectedTabValue) {
             case "smart-city":
-                return (`./images/smartcity_3.webp`)
+                return (`/images/smartcity_3.webp`)
             case "5g-base-stations":
-                return (`./images/5g.webp`)
+                return (`/images/5g.webp`)
             case "manufacturing":
-                return (`./images/manufacturing.webp`)
+                return (`/images/manufacturing.webp`)
             case "logistics":
-                return (`./images/distirbutioncc.webp`)
+                return (`/images/distirbutioncc.webp`)
         }
-        return "./images/smartcity_3.webp"
+        return "/images/smartcity_3.webp"
     }
 
     return (
@@ -76,7 +77,7 @@ function PlatformCardTwo() {
                                     <CardFooter>
                                         <div className='grid grid-cols-2 w-full'>
                                             <div></div>
-                                            <div className='flex justify-end'><Button variant="destructive" size={"lg"} className='text-white sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:2xl mt-3 transition duration-700 ease-in-out text-wrap'>Request a Call</Button></div>
+                                            <div className='flex justify-end'><Button variant="destructive" size={"lg"} onClick={()=> push('/forms')} className='text-white sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:2xl mt-3 transition duration-700 ease-in-out text-wrap'>Request a Call</Button></div>
                                         </div>
                                     </CardFooter>
                                 </Card>

@@ -1,17 +1,19 @@
-/** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'Production';
-const nextConfig = {
+import path from 'path';
+
+export default {
   reactStrictMode: true,
+
   images: {
-    unoptimized: true,
-    loader: 'custom',
-    loaderFile: './ImageLoader.js',
+    domains: [],
   },
-  assetPrefix: isProd ? '/datasanceWeb/' : "",
-  basePath: isProd ? '/datasanceWeb' : "",
-  output: 'export',
-  poweredByHeader: false,
+
+  webpack: (config, { isServer }) => {
+    config.resolve.alias['@'] = path.resolve('./src');
+    config.resolve.alias['~'] = path.resolve('./public');
+
+    return config;
+  },
+
+  basePath: '',
   trailingSlash: true,
 };
-
-export default nextConfig;
