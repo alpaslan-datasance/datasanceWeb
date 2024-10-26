@@ -8,9 +8,7 @@ function DatasanceForm() {
     <>
       <div className="w-full h-full bg-black">
         <div className="bg-white">
-          <CustomHeader></CustomHeader>
           <DatasanceFormRequestACall></DatasanceFormRequestACall>
-          <CustomFooter></CustomFooter>
         </div>
       </div>
     </>
