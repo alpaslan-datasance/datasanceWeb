@@ -26,7 +26,7 @@ export const SliderOne = memo( function SliderOne () {
             const cards = [
                 {
                     name: "First item",
-                    image: "/images/Slider/firstSlider/slider_1.webp",
+                    image: "./images/Slider/firstSlider/slider_1.webp",
                     content: <>
                         <div className='absolute w-full grid grid-cols-2 top-20 left-0 flex justify-center items-center' key={"First"}>
                             <div>
@@ -43,7 +43,7 @@ export const SliderOne = memo( function SliderOne () {
                 },
                 {
                     name: "Second item",
-                    image: "/images/Slider/firstSlider/slider_2.webp",
+                    image: "./images/Slider/firstSlider/slider_2.webp",
                     content: <>
                         <div className='absolute w-full grid grid-cols-2 top-20 left-0 flex justify-center items-center' key={"Second"}>
                             <div>
@@ -60,7 +60,7 @@ export const SliderOne = memo( function SliderOne () {
                 },
                 {
                     name: "Third item",
-                    image: "/images/Slider/firstSlider/slider_3.webp",
+                    image: "./images/Slider/firstSlider/slider_3.webp",
                     content: <>
                         <div className='absolute w-full grid grid-cols-2 top-20 left-0 flex justify-center items-center' key={"Third"}>
                             <div>
@@ -77,7 +77,7 @@ export const SliderOne = memo( function SliderOne () {
                 },
                 {
                     name: "Fourth item",
-                    image: "/images/Slider/firstSlider/slider_4.webp",
+                    image: "./images/Slider/firstSlider/slider_4.webp",
                     content: <>
                         <div className='absolute w-full grid grid-cols-2 top-20 left-0 flex justify-center items-center' key={"Fourth"}>
                             <div>
@@ -98,7 +98,7 @@ export const SliderOne = memo( function SliderOne () {
             const cardsMobile = [
                 {
                     name: "First item",
-                    image: "/images/Slider/firstSlider/slider_1.webp",
+                    image: "./images/Slider/firstSlider/slider_1.webp",
                     content: <>
                         <div className='absolute w-full grid grid-cols-2 top-0 left-0' key={"First"}>
                             <div className='flex flex-col'>
@@ -113,7 +113,7 @@ export const SliderOne = memo( function SliderOne () {
                 },
                 {
                     name: "Second item",
-                    image: "/images/Slider/firstSlider/slider_2.webp",
+                    image: "./images/Slider/firstSlider/slider_2.webp",
                     content: <>
                         <div className='absolute w-full grid grid-cols-2 top-0 left-0 mt-5' key={"Second"}>
                             <div className='flex flex-col'>
@@ -128,7 +128,7 @@ export const SliderOne = memo( function SliderOne () {
                 },
                 {
                     name: "Third item",
-                    image: "/images/Slider/firstSlider/slider_3.webp",
+                    image: "./images/Slider/firstSlider/slider_3.webp",
                     content: <>
                         <div className='absolute w-full grid grid-cols-2 top-0 left-0 mt-2 p-4' key={"Third"}>
                             <div className='flex flex-col'>
@@ -143,7 +143,7 @@ export const SliderOne = memo( function SliderOne () {
                 },
                 {
                     name: "Fourth item",
-                    image: "/images/Slider/firstSlider/slider_4.webp",
+                    image: "./images/Slider/firstSlider/slider_4.webp",
                     content: <>
                         <div className='absolute w-full grid grid-cols-2 top-0 left-0 mt-5' key={"Fourth"}>
                             <div className='flex flex-col'>

@@ -14,7 +14,7 @@ function SliderTwo() {
                     <div className='lg:grid xl:grid 2xl:grid lg:text-grid-cols-12 xl:text-grid-cols-12 2xl:grid-cols-12 lg:gap-3 xl:gap-3 2xl:gap-3 xl:m-8 2xl:m-8 '>
                         <div className='m-5 col-span-3 flex justify-center'>
                             <Image
-                                src="/images/book.webp"
+                                src="./images/book.webp"
                                 width={100}
                                 height={100}
                                 sizes="100vw"
@@ -75,7 +75,7 @@ function SliderTwo() {
                         </div>
                         <div className='m-5'>
                             <Image
-                                src="/images/cloud_centric.webp"
+                                src="./images/cloud_centric.webp"
                                 width={100}
                                 height={100}
                                 sizes="100vw"
@@ -109,7 +109,7 @@ function SliderTwo() {
                         </div>
                         <div className='m-5'>
                             <Image
-                                src="/images/sunum1_1.webp"
+                                src="./images/sunum1_1.webp"
                                 width={100}
                                 height={100}
                                 sizes="100vw"

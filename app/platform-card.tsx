@@ -15,7 +15,7 @@ function PlatformCard() {
                     <div className='font-bold text-black ml-10 items-center text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-8xl 2xl:8xl'>Platform of EveryThing</div>
                     <div className='flex justify-end items-center mr-14'>
                         <Image
-                            src="/images/pot.webp"
+                            src="./images/pot.webp"
                             width={1}
                             height={1}
                             sizes="100vw"
@@ -54,7 +54,7 @@ function PlatformCard() {
                                         </div>
                                         <div className='flex justify-center items-center'>
                                             <Image
-                                                src="/images/core_concept.webp"
+                                                src="./images/core_concept.webp"
                                                 width={1}
                                                 height={1}
                                                 sizes="100vw"
@@ -90,7 +90,7 @@ function PlatformCard() {
                                         </div>
                                         <div className='flex justify-center items-center'>
                                             <Image
-                                                src="/images/core_concept.webp"
+                                                src="./images/core_concept.webp"
                                                 width={1}
                                                 height={1}
                                                 sizes="100vw"
@@ -125,7 +125,7 @@ function PlatformCard() {
                                         </div>
                                         <div className='flex justify-center items-center'>
                                             <Image
-                                                src="/images/fog_2.webp"
+                                                src="./images/fog_2.webp"
                                                 width={1}
                                                 height={1}
                                                 sizes="100vw"
@@ -161,7 +161,7 @@ function PlatformCard() {
                                         </div>
                                         <div className='flex justify-center items-center'>
                                             <Image
-                                                src="/images/hono_landing_page.webp"
+                                                src="./images/hono_landing_page.webp"
                                                 width={1}
                                                 height={1}
                                                 sizes="100vw"
@@ -193,7 +193,7 @@ function PlatformCard() {
                                         </div>
                                         <div className='flex justify-center items-center'>
                                             <Image
-                                                src="/images/dt_2.webp"
+                                                src="./images/dt_2.webp"
                                                 width={1}
                                                 height={1}
                                                 sizes="100vw"
@@ -228,7 +228,7 @@ function PlatformCard() {
                                         </div>
                                         <div className='flex justify-center items-center'>
                                             <Image
-                                                src="/images/summary.webp"
+                                                src="./images/summary.webp"
                                                 width={1}
                                                 height={1}
                                                 sizes="100vw"

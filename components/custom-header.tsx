@@ -37,7 +37,7 @@ function CustomHeader() {
             <div className='ms-0 flex'>
               <div className='flex justify-start items-center'>
                 <Image
-                  src="/images/datasance-logo-white.webp"
+                  src="./images/datasance-logo-white.webp"
                   width={50}
                   height={50}
                   alt="Picture of the author"
@@ -52,7 +52,7 @@ function CustomHeader() {
               <div className='grid grid-cols-3 gap-4'>
                 <div>
                   <Image
-                    src="/images/linkedin-white.webp"
+                    src="./images/linkedin-white.webp"
                     width={30}
                     height={30}
                     alt="Picture of the author"
@@ -63,7 +63,7 @@ function CustomHeader() {
                 </div>
                 <div>
                   <Image
-                    src="/images/github-white.webp"
+                    src="./images/github-white.webp"
                     width={30}
                     height={30}
                     alt="Picture of the author"
@@ -84,7 +84,7 @@ function CustomHeader() {
           <div className='ms-5 flex grid-cols-subgrid col-span-1'>
             <div className='flex justify-start items-center '>
               <Image
-                src="/images/datasance-logo-black.webp"
+                src="./images/datasance-logo-black.webp"
                 width={50}
                 height={50}
                 alt="Picture of the author"
@@ -116,7 +116,7 @@ function CustomHeader() {
                 !isMobile ?
                   <div className={`grid grid-cols-3 gap-3`}>
                     <Image
-                      src="/images/linkedin-black.webp"
+                      src="./images/linkedin-black.webp"
                       width={1}
                       height={1}
                       sizes="100vw"
@@ -130,7 +130,7 @@ function CustomHeader() {
                       className='cursor-pointer'
                     />
                     <Image
-                      src="/images/github-black.webp"
+                      src="./images/github-black.webp"
                       width={1}
                       height={1}
                       sizes="100vw"
