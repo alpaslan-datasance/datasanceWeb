@@ -16,4 +16,5 @@ export default {
 
   basePath: '',
   trailingSlash: true,
+  output: 'export'
 };
