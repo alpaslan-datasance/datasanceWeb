@@ -44,7 +44,7 @@ function DatasanceFormRequestACall() {
                   <div className='flex items-center justify-center'>
                     <div className="w-full h-16 w-16 md:h-48 w-48 lg:h-64 w-64 relative">
                       <Image
-                        src="/images/datasance-logo-white.webp"
+                        src="https://alpaslan-datasance.github.io/datasanceWeb/images/datasance-logo-white.webp"
                         layout="fill"
                         objectFit="contain"
                         alt="logo"

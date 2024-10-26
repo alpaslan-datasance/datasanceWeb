@@ -23,6 +23,7 @@ const nextConfig = {
    */
   images: {
     unoptimized: true,
+    domains: ['alpaslan-datasance.github.io'],
   },
 };
 
