@@ -3,10 +3,11 @@
 import React from 'react'
 import { Button } from "@/components/ui/button"
 import Image from 'next/image'
+import { useRouter } from 'next/navigation';
 
 
 function SliderTwo() {
-
+    const { push } = useRouter();
     return (
         <>
             <div className='w-full flex justify-center h-42' style={{ backgroundColor: "#0B1522" }}>
@@ -32,7 +33,7 @@ function SliderTwo() {
                                 <div className='text-start text-white text-lg mt-4'>According to Technological Transformation report published by World Economic Forum, digital technology can cut global emissions by 15%.Enterprises need to step up and modernize their infrastructures to cope against climate challange.</div>
                                 <div className='grid xl:grid-cols-2 2xl:grid-cols-2'>
                                     <div className=''>
-                                        <Button variant="destructive" size={"lg"} className='text-white sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:2xl mt-3 transition duration-700 ease-in-out text-wrap'>Discover more</Button>
+                                        <Button variant="destructive" size={"lg"} onClick={() => push('/forms')} className='text-white sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:2xl mt-3 transition duration-700 ease-in-out text-wrap'>Discover more</Button>
                                     </div>
                                     <div></div>
 
@@ -66,7 +67,7 @@ function SliderTwo() {
 
                             <div className='grid xl:grid-cols-1 2xl:grid-cols-1'>
                                 <div className='xl:col-span-1 2xl:col-span-1'>
-                                    <Button variant="destructive" size={"lg"} className='text-white sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:2xl mt-3 transition duration-700 ease-in-out text-wrap'>Discover more</Button>
+                                    <Button variant="destructive" size={"lg"} onClick={() => push('/forms')} className='text-white sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:2xl mt-3 transition duration-700 ease-in-out text-wrap'>Discover more</Button>
                                 </div>
                                 <div></div>
 
@@ -99,7 +100,7 @@ function SliderTwo() {
                                 <div className='text-start text-white text-lg mt-4'>The scale and coverage of digital intelligence is increasing as enterprises would like to turn their physical assets into intelligent machines. But physical assets are heterogeneous, and it makes building an intelligent machine ecosystem complex. To make Intelligence development more secure and agile, enterprises need to abstracts the complexities of both asset management, networking and hardware dependencies away from the intelligence applications.</div>
                                 <div className='grid xl:grid-cols-2 2xl:grid-cols-2'>
                                     <div className=''>
-                                        <Button variant="destructive" size={"lg"} className='text-white sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:2xl mt-3 transition duration-700 ease-in-out text-wrap'>Discover more</Button>
+                                        <Button variant="destructive" size={"lg"} onClick={() => push('/forms')} className='text-white sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:2xl mt-3 transition duration-700 ease-in-out text-wrap'>Discover more</Button>
                                     </div>
                                     <div></div>
 

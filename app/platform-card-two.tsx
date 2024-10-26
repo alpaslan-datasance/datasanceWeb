@@ -96,7 +96,7 @@ function PlatformCardTwo() {
                                     <CardFooter>
                                         <div className='grid grid-cols-2 w-full'>
                                             <div></div>
-                                            <div className='flex justify-end'><Button variant="destructive" size={"lg"} className='text-white sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:2xl mt-3 transition duration-700 ease-in-out text-wrap'>Request a Call</Button></div>
+                                            <div className='flex justify-end'><Button variant="destructive" size={"lg"} onClick={()=> push('/forms')} className='text-white sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:2xl mt-3 transition duration-700 ease-in-out text-wrap'>Request a Call</Button></div>
                                         </div>
                                     </CardFooter>
                                 </Card>
@@ -115,7 +115,7 @@ function PlatformCardTwo() {
                                     <CardFooter>
                                         <div className='grid grid-cols-2 w-full'>
                                             <div></div>
-                                            <div className='flex justify-end'><Button variant="destructive" size={"lg"} className='text-white sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:2xl mt-3 transition duration-700 ease-in-out text-wrap'>Request a Call</Button></div>
+                                            <div className='flex justify-end'><Button variant="destructive" size={"lg"} onClick={()=> push('/forms')} className='text-white sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:2xl mt-3 transition duration-700 ease-in-out text-wrap'>Request a Call</Button></div>
                                         </div>
                                     </CardFooter>
                                 </Card>
@@ -134,7 +134,7 @@ function PlatformCardTwo() {
                                     <CardFooter>
                                         <div className='grid grid-cols-2 w-full'>
                                             <div></div>
-                                            <div className='flex justify-end'><Button variant="destructive" size={"lg"} className='text-white sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:2xl mt-3 transition duration-700 ease-in-out text-wrap'>Request a Call</Button></div>
+                                            <div className='flex justify-end'><Button variant="destructive" size={"lg"} onClick={()=> push('/forms')} className='text-white sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:2xl mt-3 transition duration-700 ease-in-out text-wrap'>Request a Call</Button></div>
                                         </div>
                                     </CardFooter>
                                 </Card>
