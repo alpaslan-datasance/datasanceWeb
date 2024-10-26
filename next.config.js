@@ -4,7 +4,7 @@ export default {
   reactStrictMode: true,
 
   images: {
-    domains: [],
+    domains: ['alpaslan-datasance.github.io'],
   },
 
   webpack: (config, { isServer }) => {
