@@ -47,7 +47,7 @@ export const CustomReactResponsiveCarousel: React.FC<Props> = ({ customCardArray
 
 
     return (
-        <div style={{ height: isMobile ? "fit-content" : "100vh", maxHeight: isMobile ? "fit-content" : "100vh" }}>
+        <div >
             <Carousel swipeable={true} showIndicators={false} showStatus={false} showThumbs={false} infiniteLoop autoPlay useKeyboardArrows autoFocus={false} centerMode centerSlidePercentage={100}
             >
                 {items}

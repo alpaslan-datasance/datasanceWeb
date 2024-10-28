@@ -9,7 +9,7 @@ import Image from 'next/image'
 
 function PlatformCard() {
     return (
-        <div className='w-full md:w-auto bg-white flex justify-center items-center mt-3 mb-4' key={`section-${"product"}`} id={"product"}>
+        <div className='bg-white flex justify-center items-center mt-3 mb-4' key={`section-${"product"}`} id={"product"}>
             <div className='container'>
                 <div className='grid grid-cols-2'>
                     <div className='font-bold text-black ml-10 items-center text-2xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-8xl 2xl:8xl'>Platform of EveryThing</div>
