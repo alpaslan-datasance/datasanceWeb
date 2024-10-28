@@ -6,7 +6,6 @@ import Image from 'next/image';
 
 interface Props {
     customCardArray: CardData[] | undefined;
-    isMobile: boolean;
 }
 
 interface CardData {
@@ -15,7 +14,7 @@ interface CardData {
     content: React.JSX.Element;
 }
 
-export const CustomReactResponsiveCarousel: React.FC<Props> = ({ customCardArray, isMobile }) => {
+export const CustomReactResponsiveCarousel: React.FC<Props> = ({ customCardArray }) => {
 
 
     const [items, setItems] = useState<React.JSX.Element[] | undefined>();

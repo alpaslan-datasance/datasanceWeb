@@ -169,7 +169,7 @@ export const SliderOne = memo(function SliderOne() {
     return (
         <>
             <div key={`section-${"slider-one"}`} id={"slider-one"}>
-                <DynamicHeader customCardArray={!isMobile ? customCardState : customCardMobile} isMobile={isMobile} />
+                <DynamicHeader customCardArray={!isMobile ? customCardState : customCardMobile} />
             </div>
         </>
     )
