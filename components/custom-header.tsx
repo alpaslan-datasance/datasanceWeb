@@ -1,10 +1,11 @@
 "use client"
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import Image from "next/image";
 import useMediaQuery from "./mq.hook";
 import BurgerMenu from './BurgerMenu';
 import styles from './custom-header.module.css';
 import { useRouter } from 'next/navigation';
+import throttle from "lodash/throttle";
 
 function CustomHeader() {
   const { push } = useRouter();
@@ -12,14 +13,13 @@ function CustomHeader() {
 
   const [navClass, setNavClass] = useState("");
 
-  const scrollNavigation = () => {
-    const scrollPosition = document.documentElement.scrollTop;
-    if (scrollPosition >= 10) {
-      setNavClass("nav-sticky");
-    } else {
-      setNavClass("");
-    }
-  };
+  const scrollNavigation = useCallback(
+    throttle(() => {
+      const scrollPosition = document.documentElement.scrollTop;
+      setNavClass(scrollPosition >= 1 ? "nav-sticky" : "");
+    }, 100), // Adjust 100ms based on your needs
+    []
+  );
 
   useEffect(() => {
     window.addEventListener("scroll", scrollNavigation);
@@ -27,12 +27,12 @@ function CustomHeader() {
     return () => {
       window.removeEventListener("scroll", scrollNavigation);
     };
-  }, []);
+  }, [scrollNavigation]);
 
   return (
     navClass !== "" ?
       <>
-        <div className='w-full md:w-auto bg-black max-h-20 min-h-20 flex justify-start items-center bg-black sticky top-0 z-50 accordion-down'>
+        <div className='w-full md:w-auto bg-black max-h-20 min-h-20 flex justify-start items-center bg-black sticky top-0 z-50 accordion-up'>
           <div className='w-full grid grid-flow-col auto-cols-auto'>
             <div className='ms-0 flex'>
               <div className='flex justify-start items-center'>
@@ -79,7 +79,7 @@ function CustomHeader() {
         </div>
       </>
       :
-      <div className='w-full md:w-auto bg-black max-h-32 min-h-32 flex justify-start items-end bg-black z-50'>
+      <div className='w-full md:w-auto bg-black max-h-32 min-h-32 flex justify-start items-end bg-black z-50 accordion-up'>
         <div className={`w-full bg-white max-h-20 min-h-20 mb-5 mr-1 ms-1 rounded-full grid ${!isMobile ? "grid-cols-6" : "grid-cols-2"}`}>
           <div className='ms-5 flex grid-cols-subgrid col-span-1'>
             <div className='flex justify-start items-center '>
