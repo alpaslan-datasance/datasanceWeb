@@ -1,6 +1,8 @@
 import CustomHeader from "@/components/custom-header";
-import {SliderOne} from "./slider-one";
+import { SliderOne } from "./slider-one";
 import dynamic from "next/dynamic";
+import CustomConsent from "@/components/custom-consent";
+
 
 export default function Home() {
 
@@ -35,6 +37,7 @@ export default function Home() {
           <SliderBanner></SliderBanner>
           <CustomFooter></CustomFooter>
           <ScrollToTopButton />
+          <CustomConsent></CustomConsent>
         </div>
       </div>
     </>
