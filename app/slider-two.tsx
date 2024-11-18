@@ -10,7 +10,7 @@ function SliderTwo() {
     const { push } = useRouter();
     return (
         <>
-            <div className='w-full flex justify-center h-42' style={{ backgroundColor: "#0B1522" }}>
+            <div className='w-full flex justify-center h-42' style={{ backgroundColor: "#10253dff" }}>
                 <div className='container'>
                     <div className='lg:grid xl:grid 2xl:grid lg:text-grid-cols-12 xl:text-grid-cols-12 2xl:grid-cols-12 lg:gap-3 xl:gap-3 2xl:gap-3 xl:m-8 2xl:m-8 '>
                         <div className='m-5 col-span-3 flex justify-center'>
@@ -91,7 +91,7 @@ function SliderTwo() {
                     </div>
                 </div>
             </div>
-            <div className='w-full flex justify-center' style={{ backgroundColor: "#0B1522" }}>
+            <div className='w-full flex justify-center' style={{ backgroundColor: "#10253dff" }}>
                 <div className='container h-42'>
                     <div className='grid lg:text-grid-cols-2 xl:text-grid-cols-2 2xl:grid-cols-2 gap-3 m-8 '>
                         <div className='flex items-center'>

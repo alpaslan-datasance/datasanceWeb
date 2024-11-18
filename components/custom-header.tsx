@@ -32,7 +32,7 @@ function CustomHeader() {
   return (
     navClass !== "" ?
       <>
-        <div className='w-full md:w-auto bg-black max-h-20 min-h-20 flex justify-start items-center bg-black sticky top-0 z-50 accordion-up'>
+        <div className='w-full md:w-auto max-h-20 min-h-20 flex justify-start items-center sticky top-0 z-50 accordion-up'  style={{backgroundColor:"#10253dff"}}>
           <div className='w-full grid grid-flow-col auto-cols-auto'>
             <div className='ms-0 flex'>
               <div className='flex justify-start items-center'>
@@ -79,7 +79,7 @@ function CustomHeader() {
         </div>
       </>
       :
-      <div className='w-full md:w-auto bg-black max-h-32 min-h-32 flex justify-start items-end bg-black z-50 accordion-up'>
+      <div className='w-full md:w-auto max-h-32 min-h-32 flex justify-start items-end z-50 accordion-up' style={{backgroundColor:"#10253dff"}}>
         <div className={`w-full bg-white max-h-20 min-h-20 mb-5 mr-1 ms-1 rounded-full grid ${!isMobile ? "grid-cols-6" : "grid-cols-2"}`}>
           <div className='ms-5 flex grid-cols-subgrid col-span-1'>
             <div className='flex justify-start items-center '>
